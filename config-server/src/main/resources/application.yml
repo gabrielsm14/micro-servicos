@@ -2,11 +2,14 @@ server:
   port: 8888
   
 spring:
-  cloud:    config:
-       server:
-         git:
+ cloud:   config:
+     server:
+        encrypt:          enabled: false
+        git:
           uri: https://github.com/gabrielsm14/microservice-repo
-          search-paths: fornecedor
+          search-paths: fornecedor, loja, transportador
+
+#spring:#  profiles:#    active: native#  cloud:#    config:#      server:#        native:#          search-locations: C:\microservice-repo
               
           
     

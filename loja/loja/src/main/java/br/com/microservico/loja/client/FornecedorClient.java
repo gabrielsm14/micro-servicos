@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import br.com.microservico.loja.controller.dto.InfoForcedorDto;
-import br.com.microservico.loja.controller.dto.InfoPedidoDto;
-import br.com.microservico.loja.controller.dto.ItemDaCompraDto;
+import br.com.microservico.loja.dto.InfoForcedorDto;
+import br.com.microservico.loja.dto.InfoPedidoDto;
+import br.com.microservico.loja.dto.ItemDaCompraDto;
 
 @FeignClient("forneceedor")
 public interface FornecedorClient {
